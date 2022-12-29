@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>G</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="/img/logo.png" style="width:100%;" class="w3-round"><br><br>
+            <h4><b>GÜL Rent A Car</b></h4>
+            <p class="w3-text-grey"></p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>Ana Sayfa</a>
+            <a href="login" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>LOGIN</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>--</a>
+        </div>
+        <div class="w3-panel w3-large">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#"><img src="/img/logo.png" style="width:65px;"
+                    class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1><b>ŞUBELER</b></h1>
+                <div class="w3-section w3-bottombar w3-padding-16">
+                    <span class="w3-margin-right">Filter:</span>
+                    
+                    <a href="sube"><button class="w3-button w3-white w3-hide-small"><i
+                        class="fa fa-map-pin w3-margin-right"></i>ŞUBELER</button> </a>
+                   
+                    
+                </div>
+                
+            </div>
+            
+        </header>
+
+        <!-- First Photo Grid-->
+        <div class="contact-list mt-4 row row-cols-lg-3 row-cols-md-2 g-3 row-cols-1">
+            <div class="contact-col">
+            <div class="contact-item bg-primary p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Acıbadem</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Acıbadem Metrobüs Durağı Kadıköy Ankara Yönü</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/41.0124222,29.0613659?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Acıbadem','https://www.google.com/maps/search/41.0124222,29.0613659?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-dark p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Ataşehir</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Ataşehir Bulvarı veya Palladium AVM</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/40.992359, 29.127108?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Ataşehir','https://www.google.com/maps/search/40.992359, 29.127108?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-primary p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Beşiktaş</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Beşiktaş Meydanı/İskele</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/41.041351, 29.007193?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Beşiktaş','https://www.google.com/maps/search/41.041351, 29.007193?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-dark p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Bostancı</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Bostancı Metro Durağı Kadıköy Ankara Yönü</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/40.9647797,29.1024266?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Bostancı','https://www.google.com/maps/search/40.9647797,29.1024266?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-primary p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Çekmeköy</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Çekmeköy Metro Durağı/Metrogarden Avm Önü</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/41.015825, 29.163836?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Çekmeköy','https://www.google.com/maps/search/41.015825, 29.163836?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-dark p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Etiler</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Etiler Metro İstasyonu</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/41.0821858,29.0357083?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Etiler','https://www.google.com/maps/search/41.0821858,29.0357083?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-primary p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">İzmir</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Alsancak Merkez</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/38.438699,27.1390415?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('İzmir','https://www.google.com/maps/search/38.438699,27.1390415?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-dark p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">İzmir-Adnan Menderes Havalimanı</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Terminal Dışı Buluşma Karşılama</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/38.293763,27.1498398?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('İzmir-Adnan Menderes Havalimanı','https://www.google.com/maps/search/38.293763,27.1498398?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-primary p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">İzmir-Alaçatı</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Air Rent A Car Oto Kiralama Turizm Tic. A.Ş. Alaçatı mah.11061 sok. Alaçatı/Çeşme/İZMİR</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/39.63391,26.5892969?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('İzmir-Alaçatı','https://www.google.com/maps/search/39.63391,26.5892969?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-dark p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">İzmir-Çeşme</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Çeşme Merkez</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/38.3206751,26.2268392?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('İzmir-Çeşme','https://www.google.com/maps/search/38.3206751,26.2268392?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-primary p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Kadıköy</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+            <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Kadıköy Metro Durağı</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/40.9752347,29.0370205?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Kadıköy','https://www.google.com/maps/search/40.9752347,29.0370205?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            <div class="contact-col">
+            <div class="contact-item bg-dark p-lg-5 p-md-4 p-3">
+            <div class="title fs-18 fw-bold text-white mb-3">Kartal</div>
+            <p class="fs-14 text-white mb-3"><a href="mailto:info@airrentacar.com.tr" class="fw-bold text-white">info@airrentacar.com.tr</a> e-posta adresimizden veya hafta içi ve hafta sonu
+            <span class="fw-bold">09:00-20:00</span> saatleri arasında ise <a href="tel:444 5 508" class="fw-bold text-white">444 5 508</a> numaralı hattımızdan Rezervasyon Merkezimize ulaşabilirsiniz.
+            </p>
+             <p class="fs-14 text-white"><strong>Çalışma Günleri : </strong> P.tesi-C.tesi</p>
+            <p class="fs-14 text-white"><strong>Adress : </strong> Kartal Köprüsü Metro İstasyonu</p>
+            <p class="fs-14 text-white tf-14"><a style="color: #fff;" href="https://www.google.com/maps/search/40.906744, 29.210454?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE" target="_blank"><i class="fa fa-map-marker"></i></a><i class="fa fa-paper-plane" onclick="if (!window.__cfRLUnblockHandlers) return false; KonumGonder('Kartal','https://www.google.com/maps/search/40.906744, 29.210454?sa=X&amp;ved=2ahUKEwjG3O2V8LD4AhUxSfEDHfDCDTEQ8gF6BAgCEAE')"></i></p>
+            </div>
+            </div>
+            
+        
+
+        <!-- Second Photo Grid-->
+
+
+        <!-- Pagination -->
+        
+
+        <!-- Images of Me -->
+        
+
+
+
+        <!-- Contact Section -->
+
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3></h3>
+                    <p>Rent a car sektörünün global lideri <b style="color: rgb(0, 0, 0);">GÜL RENT A CAR
+                        </b>güvencesiyle araç kiralamak ve kaliteli sürüş keyfini deneyimlemek için hemen bize katılın
+                    </p>
+                    <img src="/img/logo.png" class="w3-left w3-margin-right" style="width:100%">
+                </div>
+
+                <div class="w3-third">
+                    <h3>Hizmetler</h3>
+                    <ul class="w3-ul w3-hoverable">
+                        <li class="w3-padding-16">
+                            <img src="/img/iletisim.jpg" class="w3-left w3-margin-right" style="width:100px">
+                            <span style="color:black ;" class="w3-large"><b>İletisim</b></span><br>
+                            <span>Siz değerli müşterilerimizin memnuniyeti bizim için büyük önem taşımaktadır. </span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <img src="/img/bizekatilin.jpg" class="w3-left w3-margin-right" style="width:100px">
+                            <span style="color:black ;" class="w3-large"><b></b>Bize Katılın</b></span><br>
+                            <span>Nitelikli insan gücü alımını gerçekleştirerek, çalışanların etkin ve verimli olabilmesini ve bu doğrultuda mutlu bir iş ortamı oluşturulmasını sağlamaktır.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">BMW</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">VOLVO</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">BUGATTI</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">FERRARI</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">WOLKSVAGEN</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">AUDI</span>
+
+
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24"></div>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
